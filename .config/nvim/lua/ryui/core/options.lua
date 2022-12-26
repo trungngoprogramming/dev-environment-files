@@ -1,7 +1,6 @@
 local opt = vim.opt -- for conciseness
 
 -- line numbers
-opt.relativenumber = true -- show relative line numbers
 opt.number = true -- shows absolute line number on cursor line (when relative number is on)
 
 -- tabs & indentation
@@ -28,11 +27,9 @@ opt.termguicolors = true
 opt.background = "dark" -- colorschemes that can be light or dark will be made dark
 opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 
--- backspace
-opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
-
 -- clipboard
 opt.clipboard:append("unnamedplus") -- use system clipboard as default register
+opt.clipboard:append("unnamed") -- linux
 
 -- split windows
 opt.splitright = true -- split vertical window to the right
